@@ -1,7 +1,0 @@
-/target
-/result
-/result-*
-.direnv/
-*.orig
-
-regions
