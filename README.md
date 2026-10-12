@@ -2,7 +2,7 @@
 
 Aurora is a FOSS implementation of the protocol used by some random (Sonix) mechanical keyboards software.
 
-If you're keyboard software looks like this:
+If your keyboard software looks like this:
 
 ![Keyboard Software](docs/assets/original_software.png)
 
