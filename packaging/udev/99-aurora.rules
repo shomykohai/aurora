@@ -1,0 +1,6 @@
+# Xinmeng / Surmen M75 (wired)
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0c45", ATTRS{idProduct}=="8006", MODE="0660", TAG+="uaccess"
+# Xinmeng / Surmen M75 PRO (wired)
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0c45", ATTRS{idProduct}=="8009", MODE="0660", TAG+="uaccess"
+# 2.4 GHz dongle
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0c45", ATTRS{idProduct}=="fefe", MODE="0660", TAG+="uaccess"

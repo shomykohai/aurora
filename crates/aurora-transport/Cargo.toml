@@ -1,0 +1,18 @@
+[package]
+name = "aurora-transport"
+description = "Transport layer for aurora"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+aurora-protocol.workspace = true
+zerocopy = { version = "0.8.57", features = ["derive"] }
+
+hidapi = { version = "2", default-features = false, features = [
+    "linux-static-hidraw",
+] }
+
+[lints]
+workspace = true

@@ -1,0 +1,16 @@
+[package]
+name = "aurora"
+description = "A library for interacting with some Sonix Keyboard"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+aurora-protocol.workspace = true
+aurora-transport.workspace = true
+aurora-boards.workspace = true
+rgb = "0.8.53"
+
+[lints]
+workspace = true

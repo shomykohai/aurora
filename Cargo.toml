@@ -1,0 +1,37 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/aurora",
+    "crates/aurora-protocol",
+    "crates/aurora-transport",
+    "crates/aurora-boards",
+    "crates/aurora-cli",
+    "crates/aurora-derive",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/shomykohai/aurora"
+
+[workspace.dependencies]
+aurora = { path = "crates/aurora" }
+aurora-protocol = { path = "crates/aurora-protocol" }
+aurora-transport = { path = "crates/aurora-transport" }
+aurora-boards = { path = "crates/aurora-boards" }
+
+[workspace.lints.rust]
+missing_debug_implementations = "warn"
+unsafe_op_in_unsafe_fn = "deny"
+
+[workspace.lints.clippy]
+undocumented_unsafe_blocks = "warn"
+todo = "warn"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+strip = true
+codegen-units = 1
+debug = false

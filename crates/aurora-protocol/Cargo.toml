@@ -1,0 +1,17 @@
+[package]
+name = "aurora-protocol"
+description = "Protocol implementation for aurora"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+aurora-derive = { version = "0.1.0", path = "../aurora-derive" }
+bitflags = "2.13.2"
+rgb = "0.8.53"
+thiserror = "2.0.20"
+zerocopy = { version = "0.8.57", features = ["derive"] }
+
+[lints]
+workspace = true
